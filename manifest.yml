@@ -1,0 +1,7 @@
+---
+applications:
+- name: gwenn-test
+  random-route: true
+  buildpack: 'https://github.com/cloudfoundry/php-buildpack/releases/download/v4.3.38/php-buildpack-v4.3.38.zip'
+  env:
+    CLUSTERS_INFO: '{"dev01":{"env":"開発環境","use":"YJ向け","center":"新白河(ssk)"},"sandbox":{"env":" 検証環境","use":"","center":""}}'
